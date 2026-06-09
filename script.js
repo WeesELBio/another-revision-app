@@ -44,33 +44,3 @@ createTopicNode(
     topicData,
     document.getElementById("topicTree")
 );
-
-let activeQuestions = [];
-
-function collectQuestions(topic)
-{
-    if(topic.questions)
-    {
-        activeQuestions.push(...topic.questions);
-    }
-
-    if(topic.children)
-    {
-        topic.children.forEach(collectQuestions);
-    }
-}
-
-switch(question.type)
-{
-    case "multiple-choice":
-        renderMultipleChoice(question);
-        break;
-
-    case "multiple-select":
-        renderMultipleSelect(question);
-        break;
-
-    case "flashcard":
-        renderFlashcard(question);
-        break;
-}
