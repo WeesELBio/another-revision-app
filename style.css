@@ -1,0 +1,39 @@
+body{
+    display:flex;
+    margin:0;
+    font-family:Arial;
+}
+
+#sidebar{
+    width:350px;
+    border-right:1px solid grey;
+    padding:15px;
+    overflow-y:auto;
+    height:100vh;
+}
+
+#main{
+    flex:1;
+    padding:20px;
+}
+
+.topic{
+    margin-left:20px;
+}
+
+#buttons{
+    margin-top:20px;
+}
+
+button{
+    margin-right:10px;
+    padding:10px;
+}
+
+.correct{
+    background-color:lightgreen;
+}
+
+.incorrect{
+    background-color:salmon;
+}
